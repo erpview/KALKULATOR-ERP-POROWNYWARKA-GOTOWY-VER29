@@ -15,7 +15,7 @@ export const ConsultantSection: React.FC<ConsultantSectionProps> = ({
       <div className="flex items-center gap-3">
         <UserCheck className="w-6 h-6 text-[#0066CC]" />
         <h3 className="text-[21px] font-semibold text-[#1d1d1f]">
-          Chciałbym również otrzymać analizę od niezależnego konstultanta
+          Chciałbym również otrzymać analizę od niezależnego konsultanta:
         </h3>
       </div>
 
