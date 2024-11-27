@@ -92,8 +92,13 @@ export const MetaTags: React.FC = () => {
       schema: {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        "name": "Systemy ERP w Polsce - Dostawcy ERP | Kalkulator ERP",
-        "description": "Poznaj najpopularniejsze systemy ERP dostępne w Polsce. Porównaj funkcjonalności i wybierz najlepsze rozwiązanie dla swojej firmy.",
+        "name": "Systemy ERP w Polsce | Kalkulator ERP",
+        "description": "Ranking i lista najpopularniejszych systemów ERP dostępnych na polskim rynku",
+        "publisher": {
+        "@type": "Organization",
+        "name": "Kalkulator ERP by ERP-VIEW.PL",
+        "url": "https://kalkulator-erp.com"
+        },
         "itemListElement": systems.map((system, index) => ({
           "@type": "ListItem",
           "position": index + 1,
