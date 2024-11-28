@@ -115,6 +115,7 @@ export const MetaTags: React.FC = () => {
       ]
     }
   ]
+}
     },
     '/koszt-wdrozenia-erp': {
       title: "Ile kosztuje wdrożenie ERP? Kompleksowy przewodnik po kosztach wdrożenia ERP | Kalkulator ERP",
