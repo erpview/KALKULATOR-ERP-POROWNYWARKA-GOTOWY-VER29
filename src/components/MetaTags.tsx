@@ -21,7 +21,7 @@ export const MetaTags: React.FC = () => {
       description: "Oblicz koszty wdrożenia systemu ERP dla Twojej firmy. Porównaj oferty wiodących dostawców, poznaj ceny modułów i otrzymaj spersonalizowaną wycenę w 24h.",
       schema: {
   "@context": "https://schema.org",
-  "@type": ["WebApplication"],
+  "@type": ["WebApplication","FAQPage"],
   "name": "Kalkulator kosztów wdrożenia systemu ERP",
   "applicationCategory": "BusinessApplication",
   "description": "Kalkulator kosztów wdrożenia systemu ERP dla firm. Porównaj oferty, poznaj ceny modułów i otrzymaj spersonalizowaną wycenę.",
