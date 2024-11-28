@@ -21,52 +21,100 @@ export const MetaTags: React.FC = () => {
       description: "Oblicz koszty wdrożenia systemu ERP dla Twojej firmy. Porównaj oferty wiodących dostawców, poznaj ceny modułów i otrzymaj spersonalizowaną wycenę w 24h.",
       schema: {
   "@context": "https://schema.org",
-  "@type": ["WebApplication"],
-  "name": "Kalkulator kosztów wdrożenia systemu ERP",
-  "applicationCategory": "BusinessApplication",
-  "description": "Kalkulator kosztów wdrożenia systemu ERP dla firm. Porównaj oferty, poznaj ceny modułów i otrzymaj spersonalizowaną wycenę.",
-  "url": "https://kalkulator-erp.com",
-  "operatingSystem": "All",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": 4.8,
-    "ratingCount": 28864
-  },
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "PLN"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Kalkulator ERP by ERP-VIEW.PL",
-    "url": "https://kalkulator-erp.com"
-  },
-}
-    },
-    '/wdrozenie-erp': {
-      title: "Wdrożenie systemu ERP - Etapy, korzyści i najlepsze praktyki | Kalkulator ERP",
-      description: "Poznaj kompleksowy przewodnik po wdrożeniu systemu ERP. Dowiedz się o etapach wdrożenia, korzyściach z systemów ERP oraz najlepszych praktykach implementacji.",
-      schema: {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "name": "Wdrożenie systemu ERP - Etapy, korzyści i najlepsze praktyki | Kalkulator ERP",
-        "headline": "Wdrożenie systemu ERP - Kompleksowy przewodnik po procesie implementacji",
-        "description": "Poznaj kompleksowy przewodnik po wdrożeniu systemu ERP. Dowiedz się o etapach implementacji, korzyściach i najlepszych praktykach.",
-        "author": {
-          "@type": "Organization",
-          "name": baseMetaTags.siteName
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": baseMetaTags.siteName,
-          "url": "https://kalkulator-erp.com"
-        },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://kalkulator-erp.com/wdrozenie-erp"
-        }
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Kalkulator kosztów wdrożenia systemu ERP",
+      "applicationCategory": "BusinessApplication",
+      "description": "Kalkulator kosztów wdrożenia systemu ERP dla firm. Porównaj oferty, poznaj ceny modułów i otrzymaj spersonalizowaną wycenę.",
+      "url": "https://kalkulator-erp.com",
+      "operatingSystem": "All",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.8,
+        "ratingCount": 28864
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "PLN"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kalkulator ERP by ERP-VIEW.PL",
+        "url": "https://kalkulator-erp.com"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Jak wygląda proces wyceny systemu ERP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Proces wyceny systemu ERP składa się z kilku etapów: analizy potrzeb firmy, określenia wymaganych modułów, oszacowania liczby użytkowników, oceny potrzeb integracji z innymi systemami oraz uwzględnienia kosztów wdrożenia i szkoleń. Każda wycena jest indywidualna i zależy od specyfiki przedsiębiorstwa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Jakie czynniki wpływają na koszt wdrożenia ERP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Główne czynniki to: wielkość firmy, liczba użytkowników, wybrane moduły, stopień customizacji, potrzeby integracji z innymi systemami, zakres szkoleń, czas wdrożenia oraz wybór między rozwiązaniem chmurowym a on-premise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ile czasu trwa typowe wdrożenie systemu ERP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Czas wdrożenia zależy od wielkości organizacji i złożoności projektu. Małe projekty mogą trwać 3-6 miesięcy, średnie 6-12 miesięcy, a duże projekty nawet powyżej roku. Kluczowe jest dokładne planowanie i zaangażowanie zespołu."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Czy lepiej wybrać system ERP w chmurze czy on-premise?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wybór zależy od specyfiki firmy. System chmurowy oferuje niższe koszty początkowe, automatyczne aktualizacje i dostęp z dowolnego miejsca. Rozwiązanie on-premise daje większą kontrolę nad danymi i możliwość głębokiej customizacji, ale wymaga własnej infrastruktury IT."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Jakie są ukryte koszty wdrożenia systemu ERP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Należy uwzględnić: koszty szkoleń pracowników, integracji z istniejącymi systemami, migracji danych, customizacji, utrzymania systemu, ewentualnych modyfikacji procesów biznesowych oraz potencjalnego spadku produktywności w okresie wdrożenia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Jak przygotować się do wdrożenia systemu ERP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kluczowe kroki to: analiza i dokumentacja procesów biznesowych, określenie celów wdrożenia, wybór lidera projektu, przygotowanie zespołu projektowego, zabezpieczenie budżetu, przegląd i oczyszczenie danych do migracji oraz opracowanie planu szkoleń."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Czy można wdrożyć ERP etapami?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tak, wdrożenie etapowe jest często rekomendowane, szczególnie dla większych organizacji. Pozwala to na lepszą kontrolę nad projektem, łatwiejsze zarządzanie zmianą oraz możliwość weryfikacji założeń przed pełnym wdrożeniem."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Jak szacować ROI z wdrożenia systemu ERP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ROI można oszacować analizując: przewidywane oszczędności czasu pracy, redukcję kosztów operacyjnych, zwiększenie efektywności procesów, poprawę jakości obsługi klienta, redukcję błędów oraz przyspieszenie podejmowania decyzji biznesowych."
+          }
+        }
+      ]
+    }
+  ]
     },
     '/koszt-wdrozenia-erp': {
       title: "Ile kosztuje wdrożenie ERP? Kompleksowy przewodnik po kosztach wdrożenia ERP | Kalkulator ERP",
